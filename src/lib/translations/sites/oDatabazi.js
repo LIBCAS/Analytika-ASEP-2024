@@ -1,0 +1,42 @@
+export default {
+  cs: {
+    "site.o_databazi.nadpis1": "Popis databáze",
+    "site.o_databazi.text1a":'Institucionálního repozitář AV ČR je k dizpozici zde: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+    "site.o_databazi.text1b": "<strong>Knihovna Akademie věd České republiky</strong> je pověřena od roku 1994 koordinací sběru dat a správou záznamů o výsledcích základního výzkumu, které vznikají na 54 pracovištích Akademie věd České republiky.",
+    "site.o_databazi.text1c": "Bibliografické záznamy i plné texty publikací jsou shromážděny v Institucionálním repozitáři AV ČR, data jsou uložena v databázi ASEP v modulu Evidence publikací knihovního systému Advanced Rapid Library (ARL).",
+    "site.o_databazi.text1d": "Programová nadstavba Analytika ASEP slouží pro zobrazení analytických přehledů, je založená na kombinaci dotazů a výpočtů nad daty v ASEP, které v on-line katalogu nelze zobrazit.",
+    "site.o_databazi.text1e": 'Odkaz do Institucionálního repozitáře AV ČR: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+
+    "site.o_databazi.nadpis2":'Popis systému Analytika ASEP',
+    "site.o_databazi.text2a": '<strong>Na stránkách jednotlivých subjektů</strong> (AV, vědních oblastí, sekcí, ústavů, oddělení, autorů) je levé vertikální menu, které má stejnou strukturu u všech stránek, ale nabídka se liší v závislosti na subjektu, ke kterému patří. Obecně je menu rozděleno na tři části - <strong>přehled publikací, statistické a grafické výstupy a přehledy projektů a výsledků</strong>, za jejichž podpory vznikly.',
+    "site.o_databazi.text2b": 'Vpravo od vertikálního menu je zobrazen filtr, kde je možno nastavit limity - výběr časového období, druhu dokumentu, typu projektu, poskytovatele aj. dle obsahu, kterého se zobrazení týká. Pod filtrem je umístěna datová oblast, k bibliografickým a grafickým přehledům jsou připravena jednoduchá řazení, zobrazení, exporty a tisky.<br />Bibliografické přehledy záznamů pracují s reálnými daty v databázi, grafické přehledy jsou aktualizovány denně, datum aktualizace je zobrazeno na stránkách.',
+    "site.o_databazi.text2c": 'Odkaz do Institucionálního repozitáře AV ČR: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+    "site.o_databazi.nadpis3": 'Hlavní strana – výběr ústavů, horní lišta',
+    "site.o_databazi.text3a": '<strong>Na hlavní stránce aplikace</strong> je zobrazen seznam pracovišť AV ČR, kde jsou ústavy seřazeny dle vědních oblastí (I. Vědy o neživé přírodě, II. Vědy o živé přírodě a chemické vědy a III. Humanitní a společenské vědy).',
+    "site.o_databazi.nadpis4": 'Horizontální menu',
+    "site.o_databazi.text4a": 'Horizontální menu, které je stejné na všech stránkách aplikace, obsahuje odkaz na úvodní stranu systému, do on-line katalogu a na webovou stránku vědních oblastí. Dále je zde umístěno pole pro rychlé hledání autora a záznamu dle systémového čísla. Informace o systému jsou popsány v nápovědě, je možno přepnout aplikaci do angličtiny.',
+    "site.o_databazi.nadpis5": 'Analytika pracovišť, vědeckých útvarů (oddělení), vědeckých pracovníků',
+    "site.o_databazi.text5a": 'Každé pracoviště, oddělení a autoři má na Analytikách ASEP vytvořenu svou webovou stránku, kde jsou shromážděny výstupy, které se týkají daného subjektu.',
+  },
+  sk: {
+  },
+  en: {
+    "site.o_databazi.nadpis1": "EN: Popis databáze",
+    "site.o_databazi.text1a":'EN: Institucionálního repozitář AV ČR je k dizpozici zde: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+    "site.o_databazi.text1b": "EN: <strong>Knihovna Akademie věd České republiky</strong> je pověřena od roku 1994 koordinací sběru dat a správou záznamů o výsledcích základního výzkumu, které vznikají na 54 pracovištích Akademie věd České republiky.",
+    "site.o_databazi.text1c": "EN: Bibliografické záznamy i plné texty publikací jsou shromážděny v Institucionálním repozitáři AV ČR, data jsou uložena v databázi ASEP v modulu Evidence publikací knihovního systému Advanced Rapid Library (ARL).",
+    "site.o_databazi.text1d": "EN: Programová nadstavba Analytika ASEP slouží pro zobrazení analytických přehledů, je založená na kombinaci dotazů a výpočtů nad daty v ASEP, které v on-line katalogu nelze zobrazit.",
+    "site.o_databazi.text1e": 'EN: Odkaz do Institucionálního repozitáře AV ČR: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+
+    "site.o_databazi.nadpis2":'EN: Popis systému Analytika ASEP',
+    "site.o_databazi.text2a": 'EN: <strong>Na stránkách jednotlivých subjektů</strong> (AV, vědních oblastí, sekcí, ústavů, oddělení, autorů) je levé vertikální menu, které má stejnou strukturu u všech stránek, ale nabídka se liší v závislosti na subjektu, ke kterému patří. Obecně je menu rozděleno na tři části - <strong>přehled publikací, statistické a grafické výstupy a přehledy projektů a výsledků</strong>, za jejichž podpory vznikly.',
+    "site.o_databazi.text2b": 'EN: Vpravo od vertikálního menu je zobrazen filtr, kde je možno nastavit limity - výběr časového období, druhu dokumentu, typu projektu, poskytovatele aj. dle obsahu, kterého se zobrazení týká. Pod filtrem je umístěna datová oblast, k bibliografickým a grafickým přehledům jsou připravena jednoduchá řazení, zobrazení, exporty a tisky.<br />Bibliografické přehledy záznamů pracují s reálnými daty v databázi, grafické přehledy jsou aktualizovány denně, datum aktualizace je zobrazeno na stránkách.',
+    "site.o_databazi.text2c": 'EN: Odkaz do Institucionálního repozitáře AV ČR: <a href="https://asep.lib.cas.cz/arl-cav/cs/vyhledavani/" target="_blank">Asep vyhledávání</a>',
+    "site.o_databazi.nadpis3": 'EN: Hlavní strana – výběr ústavů, horní lišta',
+    "site.o_databazi.text3a": 'EN: <strong>Na hlavní stránce aplikace</strong> je zobrazen seznam pracovišť AV ČR, kde jsou ústavy seřazeny dle vědních oblastí (I. Vědy o neživé přírodě, II. Vědy o živé přírodě a chemické vědy a III. Humanitní a společenské vědy).',
+    "site.o_databazi.nadpis4": 'EN: Horizontální menu',
+    "site.o_databazi.text4a": 'EN: Horizontální menu, které je stejné na všech stránkách aplikace, obsahuje odkaz na úvodní stranu systému, do on-line katalogu a na webovou stránku vědních oblastí. Dále je zde umístěno pole pro rychlé hledání autora a záznamu dle systémového čísla. Informace o systému jsou popsány v nápovědě, je možno přepnout aplikaci do angličtiny.',
+    "site.o_databazi.nadpis5": 'EN: Analytika pracovišť, vědeckých útvarů (oddělení), vědeckých pracovníků',
+    "site.o_databazi.text5a": 'EN: Každé pracoviště, oddělení a autoři má na Analytikách ASEP vytvořenu svou webovou stránku, kde jsou shromážděny výstupy, které se týkají daného subjektu.',
+  },
+};
