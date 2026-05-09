@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Atyp Text';
+  src: url('../fonts/RobotoSerif-20ptRegular.eot');
+  src: local(''),
+      url('../fonts/AtypText-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AtypText-Regular.woff2') format('woff2'),
+      url('../fonts/AtypText-Regular.woff') format('woff'),
+      url('../fonts/AtypText-Regular.ttf') format('truetype'),
+      url('../fonts/AtypText-Regular.svg#AtypText-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
