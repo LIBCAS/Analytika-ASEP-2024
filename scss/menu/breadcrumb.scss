@@ -1,0 +1,69 @@
+@use '../vars.scss' as *;
+
+ul.breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  display: block;
+  background-color: #f8f8f8;
+  @media print {
+    display: none;
+  }
+
+  li {
+    list-style-type: none;
+    background: none;
+    padding: 0rem;
+    display: inline-block;
+    position: relative;
+  }
+
+  li:has(a) {
+    &:after {
+      content: "";
+      height: 15px;
+      right: 0px;
+      position: absolute;
+      top: calc(50% - 7px);
+      width: 17px;
+      background: url(../images/svg/arrow-breadcrumb3.svg);
+      background-size: 15px auto;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+ul.breadcrumb {
+  li a, li span {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5rem;
+    padding: .3rem 0.2rem;
+    color: $color-odkaz;
+    font-size: 0.9rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li span {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li a {
+    padding-right: 1.4rem;
+  }
+}
+
+
+
+
+
+
+

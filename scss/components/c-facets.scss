@@ -1,0 +1,16 @@
+.c-facets {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.c-facets-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  p:last-of-type {
+    overflow-wrap: normal
+  }
+}
+

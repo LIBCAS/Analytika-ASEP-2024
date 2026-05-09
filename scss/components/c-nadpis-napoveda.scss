@@ -1,0 +1,66 @@
+@use '../vars.scss' as *;
+
+.c-nadpis-napoveda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: ($mobile-width)) {
+    flex-wrap: wrap;
+  }
+}
+
+.c-nadpis-napoveda__nadpis {
+  padding-right: 1rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.c-nadpis-napoveda__odkaz {
+  margin-bottom: 0;
+  margin-top: 1rem;
+
+  @media print {
+    display: none;
+  }
+
+  @media screen and (max-width: ($mobile-width)) {
+    width: 100%;
+    order: -1;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.87rem;
+    margin: 0;
+    text-decoration: none;
+    background: url('../images/svg/napoveda.svg') $back-help no-repeat 7px center;
+    background-size: 22px;
+    padding-left: 40px;
+    color: #ffffff;
+    font-family: sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.2em;
+    transition: transform 150ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: #0053ba;
+    }
+
+    &:focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+

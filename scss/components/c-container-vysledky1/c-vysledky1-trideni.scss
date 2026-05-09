@@ -1,0 +1,12 @@
+@use '../../vars.scss' as *;
+
+.c-vysledky1-trideni {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+
+  @media screen and (max-width: ($mobile-width-480)) {
+    display: block;
+  }
+
+}

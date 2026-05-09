@@ -1,0 +1,24 @@
+// max. sizes
+.c-cav-graf {
+     margin-top: 2rem;
+     position:relative;
+     max-width: 52vw;
+}
+
+// min. width
+.c-cav-graf {
+     overflow: auto;
+     min-width:700px;
+}
+
+.c-cav-graf>div>div>div {
+    position: relative;
+    min-height: 40vw;
+    min-width:700px;
+  }
+
+
+  .c-cav-graf div {
+     font-size: 0.8rem;
+     text-align:right;
+}

@@ -1,0 +1,97 @@
+@use '../vars.scss' as *;
+
+.lsc-strankovani {
+  position: relative;
+  margin: 0.7rem 0;
+
+  @media print {
+    display: none;
+  }
+
+  button {
+    appearance: none;
+    display: inline-block;
+    border: none;
+    padding: 0.4rem 0.7rem;
+    margin: 0;
+    text-decoration: none;
+    background: $back-siter-background;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.2em;
+    transition: background 250ms ease-in-out,
+    transform 150ms ease;
+
+    &:hover,
+    &:focus {
+      background: #0053ba;
+    }
+
+    &:focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+
+    &:disabled {
+      background: #777;
+    }
+
+    @media screen and (max-width: ($mobile-width+-1)) {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @media screen and (max-width: ($mobile-width+-1)) {
+      width: 100%;
+      margin-top: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .lsc-strankovani-button-site {
+    border: 1px solid $back-siter-background;
+    background: white;
+    padding: 0.4rem 0.4rem;
+    color: $color-siter;
+    font-weight: normal;
+    margin: 0 0.1rem;
+
+    &:hover,
+    &:focus {
+      background: white;
+    }
+
+    &:focus {
+      outline: auto;
+      outline-offset: 0px;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+
+    &:disabled {
+      border: 1px solid #777;
+      background: $back-siter-background; //#x393b78;
+      color: white;
+      cursor: auto;
+    }
+  }
+}
+
+
+
+
+

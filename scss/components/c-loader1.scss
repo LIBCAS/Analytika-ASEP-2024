@@ -1,0 +1,22 @@
+.c-loader1 {
+  border: 1rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1rem solid #1c4278;
+  width: 5rem;
+  height: 5rem;
+  -webkit-animation: spincloader1 2s linear infinite; /* Safari */
+  animation: spincloader1 2s linear infinite;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+/* Safari */
+@-webkit-keyframes spincloader1 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spincloader1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,42 @@
+@use '../vars.scss' as *;
+
+.c-cav-graf, .c-cav-grid-width-set2 {
+  max-width: 52vw;
+  overflow: auto;
+  min-width: 700px;
+  @media screen and (max-width: (1700px)) {
+    max-width: 58vw;
+  }
+  @media screen and (max-width: (1650px)) {
+    max-width: 61vw;
+  }
+  @media screen and (max-width: (1600px)) {
+    max-width: 64vw;
+  }
+  @media screen and (max-width: (1500px)) {
+    max-width: 65vw;
+  }
+  @media screen and (max-width: (1400px)) {
+    max-width: 71vw;
+  }
+  @media screen and (max-width: (1300px)) {
+    max-width: 74vw;
+  }
+  @media screen and (max-width: (1200px)) {
+    max-width: 74vw;
+  }
+  @media screen and (max-width: (950px)) {
+    max-width: 89vw;
+  }
+  @media screen and (max-width: (700px)) {
+    max-width: 95vw;
+  }
+  @media screen and (max-width: (200px)) {
+    max-width: 98vw;
+  }
+}
+
+.l-site-form {
+  max-width: 100%;
+}
+

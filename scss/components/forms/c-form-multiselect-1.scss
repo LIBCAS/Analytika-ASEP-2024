@@ -1,0 +1,52 @@
+@use '../../vars.scss' as *;
+// multiselect - form component
+.c-form-multiselect {
+  margin-bottom: 0 !important;
+
+  .btn {
+    background: transparent;
+    appearance: none;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn::-moz-focus-inners {
+    border: 0;
+    padding: 0;
+  }
+
+  .btn .h4, .btn h4 {
+    margin: 0 !important;
+  }
+
+  .arrow {
+    display: flex;
+    margin: 1rem 0 0 0 !important;
+  }
+
+  .arrow svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  .mt-0 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .mb-1 {
+    margin-bottom: 0.4rem !important;
+  }
+
+  .btn--cursor-kl {
+    cursor: default;
+  }
+}

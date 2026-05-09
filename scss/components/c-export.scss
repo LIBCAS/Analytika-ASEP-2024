@@ -1,0 +1,33 @@
+.lsc-cav-export {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  justify-content: right;
+  @media print {
+    display: none;
+  }
+
+  li {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    button {
+      background: transparent; //#f8f8f8;
+      border: none;
+      border-radius: .2em;
+      color: #777;
+      cursor: pointer;
+      padding: 0.1rem 0.3rem;
+      display: flex;
+    }
+
+    button.btn-active {
+      background: #b7b7b7;
+    }
+
+  }
+}

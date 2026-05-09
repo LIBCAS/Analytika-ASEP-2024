@@ -1,0 +1,9 @@
+.l-site-graf div {
+  overflow: auto;
+}
+
+.l-site-graf > div > div > div {
+  position: relative;
+  min-height: 40vw;
+  min-width: 700px;
+}

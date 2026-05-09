@@ -1,0 +1,166 @@
+@use '../vars.scss' as *;
+
+.c-records-container .c-records:nth-of-type(odd) {
+  background: #f9fcff;
+}
+
+.c-records-container .c-records-results:nth-of-type(odd) {
+  background: #f9fcff;
+}
+
+.c-records-results {
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+  margin-bottom: 1.1rem;
+}
+
+.c-records {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+  padding: 0.1rem 0rem .5rem 0rem;
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: ($desk1-width+-1)) {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .c-records__item2 {
+    width: 0.1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: #f8f8f8;
+    padding: 0.5rem 0.5rem;
+
+    @media print {
+      display: none;
+    }
+
+    @media screen and (max-width: ($desk1-width+-1)) {
+      background: transparent;
+    }
+  }
+
+  .c-records__item2:has(.c-auxilitary--view) {
+    width: 18%;
+
+    @media screen and (max-width: ($desk1-width+-1)) {
+      width: 100%;
+    }
+  }
+
+  .c-auxilitary__item {
+    margin-bottom: 0.2rem;
+    background-size: auto 18px;
+    background-repeat: no-repeat;
+    background-position: 0 43%;
+    padding: 0px 0 3px 27px;
+    font-size: 0.8rem;
+  }
+
+  .c-auxilitary__item--riv {
+    background-image: url(../images/svg/icons/riv.svg);
+  }
+
+  .c-auxilitary__item--pubmed {
+    background-image: url(../images/svg/icons/pubmed.svg);
+  }
+
+  .c-auxilitary__item--scopus {
+    background-image: url(../images/svg/icons/scopus.svg);
+  }
+
+  .c-auxilitary__item--wos {
+    background-image: url(../images/svg/icons/wos2.svg);
+  }
+
+  .c-auxilitary__item--handlenet {
+    background-image: url(../images/svg/icons/handlenet.svg);
+  }
+
+  .c-auxilitary__item--handlenet-o {
+    background-image: url(../images/svg/icons/handlenet-o.svg);
+  }
+
+  .c-auxilitary__item--handlenet-n {
+    background-image: url(../images/icon-asep2.webp);
+  }
+
+  .c-auxilitary__item--ipac {
+    background-image: url(../images/icon-arl.webp);
+  }
+
+  .c-auxilitary__item--pubmed {
+    background-image: url(../images/icon-pubmed.webp);
+  }
+
+  .c-auxilitary__item--doi {
+    background-image: url(../images/svg/icons/doi.svg);
+  }
+}
+
+.c-records-results {
+  .c-records-results__item2 {
+    .c-auxilitary-results {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .c-auxilitary-results__item {
+    margin-bottom: 0.2rem;
+    background-size: auto 20px;
+    background-repeat: no-repeat;
+    background-position: 0 43%;
+    padding: 0px 0 3px 24px;
+    font-size: 0.8rem;
+  }
+
+  .c-auxilitary-results__item--catalog {
+    background-image: url(../images/icon-katalog.webp);
+  }
+
+  .c-auxilitary-results__item--cep {
+    background-image: url(../images/icon-cep.webp);
+  }
+
+  .c-auxilitary-results__item--list {
+    background-image: url(../images/icon-list.webp);
+  }
+
+  .c-auxilitary-results__item--cordis {
+    background-image: url(../images/icon-cordis.webp);
+  }
+
+  .c-records:nth-of-type(even) {
+    background: #FAFCFF;
+  }
+
+  .xc-ul-li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      list-style-type: none;
+      margin-bottom: 0.2rem;
+      background: url(../images/svg/li-ctverec.svg) no-repeat 0% 43%;
+      background-size: 10px;
+      padding: 0px 0 3px 24px;
+    }
+  }
+}
+

@@ -1,0 +1,167 @@
+@use '../vars.scss' as *;
+
+// desktop version
+@media screen and (min-width: $mobile-width-menu+1) {
+  #l-head-menu-list-submenu1 {
+    display: none;
+  }
+
+  #l-head-menu-list-submenu2, #l-head-menu-list-submenu3 {
+    display: none;
+  }
+
+  .l-head-menu-list {
+    overflow: visible;
+  }
+
+  .l-head-menu-list__submenu {
+    position: relative;
+    display: block;
+  }
+
+  .l-head-menu-list-mega_box,
+  .l-head-menu-list-mega_box3 {
+    position: absolute;
+    top: 57px;
+    left: -5rem;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    text-align: left;
+    background: white;
+    min-width: 340%;
+    max-height: 30vw;
+    overflow-y: auto;
+    border-left: 1px solid $color-border-submenu;
+    border-right: 1px solid $color-border-submenu;
+    border-bottom: 1px solid $color-border-submenu;
+    border-top: 1px solid $color-border-submenu;
+    box-shadow: 0 0px 2px $color-border-submenu;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0rem 0 0rem 0rem;
+        list-style-type: none;
+
+        a {
+          text-align: left;
+          padding: 0.1rem 1rem;
+          color: $color-submenu-item;
+          font-size: 0.85rem;
+          text-transform: none;
+          font-weight: 400;
+
+          span {
+            border-bottom: 1px solid transparent;
+          }
+        }
+      }
+
+      li:first-child a {
+        padding-top: 0.5rem;
+      }
+
+      li.active a span,
+      li > a:hover span,
+      li > label:hover span {
+        // text-decoration: underline !important;
+        border-bottom: 1px solid $color-menu-item;
+      }
+    }
+
+    .s-linka {
+      border-top: 1px solid $color-border-submenu;
+      margin-top: 1.3rem;
+      padding-top: .4rem;
+      padding-bottom: 1rem;
+    }
+
+
+  }
+  .l-head-menu-list-mega_box3 {
+    min-width: 317%;
+    left: -8rem;
+  }
+
+  .l-head-menu-list-mega_box3 ul, .l-head-menu-list-mega_box ul {
+    padding: 0;
+  }
+
+  .l-head-menu-list.no-js li:hover .l-head-menu-list-mega_box,
+  .l-head-menu-list.no-js li:hover .l-head-menu-list-mega_box3,
+  .l-head-menu-list.no-js li.menu-is-touch:focus-within .l-head-menu-list-mega_box,
+  .l-head-menu-list.no-js li.menu-is-touch:focus-within .l-head-menu-list-mega_box3,
+  .l-head-menu-list.no-js li:focus-within .l-head-menu-list-mega_box,
+  .l-head-menu-list.no-js li:focus-within .l-head-menu-list-mega_box3,
+  .l-head-menu-list.js-menu-vis li .l-head-menu-list-mega_box,
+  .l-head-menu-list.js-menu-vis3 li .l-head-menu-list-mega_box3 {
+    top: 34px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// mobile version
+@media screen and (max-width: ($mobile-width-menu)) {
+  #l-head-menu-list-submenu1 {
+    display: none;
+  }
+
+  #l-head-menu-list-submenu2, #l-head-menu-list-submenu3 {
+    display: none;
+  }
+
+  .l-head-menu-list-mega_box,
+  .l-head-menu-list-mega_box3 {
+    position: static;
+    width: calc(100% + 2rem);
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: all 0.1s ease;
+    position: relative;
+    top: -1rem;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 0;
+    }
+
+    a {
+      background-color: $back-menu-mobile-item !important;
+      margin: 0 !important;
+      white-space: normal !important;
+      font-size: 1.1rem !important;
+      padding: 0.8rem 0.8rem !important;
+    }
+
+    li:last-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  #l-head-menu-list-submenu1:checked ~ .l-head-menu-list-mega_box {
+    max-height: 100%;
+  }
+
+  #l-head-menu-list-submenu2:checked ~ .l-head-menu-list-mega_box {
+    max-height: 100%;
+  }
+
+  #l-head-menu-list-submenu3:checked ~ .l-head-menu-list-mega_box3 {
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+@use '../vars.scss' as *;
+
+.l-vysledek-vyhledavani {
+  display: flex;
+  display: block; // HOT FIX ! - TO_DO
+  width: 100%;
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  @media screen and (max-width: ($desk2-width + 1)) {
+    // flex-wrap: wrap;
+    // gap: 0rem 0rem;
+  }
+  @media screen and (max-width: ($mobile-width + 1)) {
+    display: block;
+  }
+}
+
+.l-vysledek-vyhledavani__facets {
+  display: none;
+  background: #f8f8f8;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.3rem;
+  min-width: 17rem;
+  max-width: 28%;
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: ($main-max-width)) {
+    min-width: 14rem;
+  }
+
+}
+
+
+#vysledek-vyhledavani-c {
+  min-height: 7rem;
+  @media screen and (max-width: ($mobile-width + 1)) {
+    overflow: auto;
+  }
+}
+
+.l-vysledek-vyhledavani_data {
+  flex: 1 1 0;
+}

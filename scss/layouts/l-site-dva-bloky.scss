@@ -1,0 +1,121 @@
+@use '../vars.scss' as *;
+
+.l-site-dva-bloky {
+  width: calc(100% - 0rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 0rem 4rem;
+  overflow: hidden;
+
+  @media screen and (max-width: ($desk1-width - 1)) {
+    flex-wrap: wrap;
+    gap: 0rem 0rem;
+  }
+
+  @media print {
+    // flex-wrap: wrap;
+    display: block;
+  }
+
+  @media screen and (max-width: ($mobile-width + 1)) {
+    //        display: block;
+    //        padding-top: 0;
+  }
+}
+
+.l-site-dva-bloky__left {
+  flex: 0 0 auto;
+  width: calc(20% - 4rem);
+  text-align: left;
+
+  h3:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  h3 {
+    transform: none;
+    font-size: 0.98rem;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style-type: none;
+    background: none;
+    padding: 0rem;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  ul li:last-of-type {
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul li.active-leve-menu {
+    background: $back-menu-left;
+
+    a {
+      color: white;
+    }
+  }
+
+  ul li a, span {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem .7rem;
+    color: $color-odkaz;
+    font-size: .98em;
+    line-height: 1.4rem;
+
+    &:hover {
+      text-decoration: underline;
+      // font-weight: bold;
+    }
+  }
+
+  ul li.active-leve-menu:has(span) {
+    background: #777;
+
+    span {
+      color: white;
+      font-size: .8em;
+      line-height: 1.1rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: ($desk1-width - 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+  }
+
+  @media screen and (max-width: ($mobile-width + 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+  }
+}
+
+.l-site-dva-bloky__item {
+  flex: 1 1 auto;
+  @media screen and (max-width: ($desk1-width - 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+    order: -1;
+  }
+}
+

@@ -1,0 +1,24 @@
+@use '../vars.scss' as *;
+
+.l-vysledek-vyhledavani-2 {
+  display: block;
+}
+
+.l-vysledek-vyhledavani-2__data {
+  column-count: 3;
+  column-gap: 3rem;
+  column-rule: 1px solid #eee;
+
+  @media screen and (max-width: ($desk2-width + 1)) {
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid #eee;
+  }
+  @media screen and (max-width: ($mobile-width + 1)) {
+    display: block;
+    column-count: 1;
+  }
+
+  > div {
+  }
+}

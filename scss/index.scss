@@ -1,0 +1,77 @@
+// vars
+@use 'vars.scss' as *;
+
+// main layout
+@use "main";
+
+// header
+@use "./layouts/header.scss";
+@use "./menu/deskt.scss";
+@use "./menu/mobil.scss";
+@use "./menu/submenu.scss";
+@use "./menu/breadcrumb.scss";
+@use "./menu/tisk.scss";
+
+// footer
+@use "./layouts/footer.scss";
+
+// components
+@use "./components/c-tri-bloky-text-1.scss";
+@use "./components/c-dva-bloky-text-1.scss";
+@use "./components/c-graf.scss";
+@use "./components/c-tabulator--cav-zmeny.scss";
+@use "./components/c-ul-li.scss";
+@use "./components/c-form-main.scss";
+@use "./components/c-strankovani.scss";
+@use "./components/c-container-vysledky1.scss";
+@use "./components/c-nadpis-napoveda.scss";
+@use "./components/c-facets.scss";
+@use "./components/c-cav-graf.scss";
+@use "./components/c-export.scss";
+@use "./components/c-records.scss";
+@use "./components/c-autor.scss";
+@use "./components/c-loader1.scss";
+@use "./components/c-numbering.scss";
+@use "./components/c-riv-info.scss";
+@use "./components/c-cav-export--toolt01.scss";
+@use "./components/c-tabulator--base.scss";
+@use "./components/home/c-home-news-1.scss";
+@use "./components/forms/c-form-multiselect-1.scss";
+
+// layouts components
+@use "./layouts/l-site-dva-bloky.scss";
+@use "./layouts/l-form.scss";
+// to_do - component !
+@use "./layouts/l-form-gen.scss";
+// to_do - component !
+@use "./layouts/l-form-oddeleni.scss";
+// to_do - component !
+@use "./layouts/l-vysledek-vyhledavani.scss";
+@use "./layouts/l-vysledek-vyhledavani-2.scss";
+@use "./layouts/l-leve-menu-submenu.scss";
+@use "./layouts/l-header-author-ida.scss";
+@use "./layouts/l-menu-highlight.scss";
+
+// sites design
+@use "./sites/design.scss";
+@use "./sites/l-site-subpage.scss";
+
+// messages
+@use "./components/messages/c-message-error.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@use '../../vars.scss' as *;
+
+//arrow size
+$lscFormSelectSize: 0.22rem;
+
+.lsc-form-select {
+  position: relative;
+  width: calc(100% - 0rem);
+  max-width: calc(407px + 2rem);
+
+  select {
+    appearance: none;
+    width: 100%;
+    font-size: 0.85rem;
+    padding: .3rem 1.8rem .3rem .4rem;
+    background-color: #fff;
+    border: 2px solid $color-form-select-border;
+    border-radius: 0.25rem;
+    color: $color-form-select-text;
+    cursor: pointer;
+  }
+
+  select:disabled {
+    border: 2px solid $color-form-disabled;
+    background: $back-form-disabled;
+  }
+}
+
+.lsc-form-select--sm {
+  select {
+    border: 1px solid $color-form-select-border; //#x393b78;
+    font-size: 0.87rem;
+  }
+}
+
+.lsc-form-select::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0.1rem;
+  top: 0rem;
+  pointer-events: none;
+}
+
+.lsc-form-select::after {
+  background-attachment: scroll;
+  background-image: url(../images/svg/menu-down-select.svg);
+  background-position: 50% 48%;
+  background-repeat: no-repeat;
+  background-size: .75rem auto;
+  font-size: 1px;
+  line-height: 1px;
+  padding: 1rem 0.8rem;
+}
+
+
+

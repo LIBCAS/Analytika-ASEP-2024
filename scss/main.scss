@@ -1,0 +1,119 @@
+@use 'vars.scss' as *;
+
+html {
+  font-size: 16px;
+  // font-size:10px;
+  scroll-behavior: smooth;
+}
+
+// home
+body {
+  font-size: 0.9rem;
+  line-height: 1.42857143;
+  font-family: "Atyp Text", sans-serif;
+}
+
+
+.lsl-lay-1900 {
+  max-width: $main-max-width-1900;
+  margin: 0 auto;
+}
+
+.lsl-lay-1400 {
+  max-width: $main-max-width;
+  margin: 0 auto;
+  // border:1px solid green;
+  padding: 0 2rem;
+
+  @media screen and (max-width: $desk1-width) {
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width: $mobile-width-480) {
+    padding: 0 0.5rem;
+  }
+}
+
+.l-main {
+  padding: 0.7rem 1rem;
+  margin: 0 auto;
+  width: calc(100% - 4rem);
+  max-width: $desk-width-content;
+  @media screen and (max-width: ($mobile-width+-1)) {
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.l-content-narrow {
+  margin: 0 auto;
+  max-width: $desk-width-content;
+  width: 100%;
+  @media screen and (max-width: ($mobile-width+-1)) {
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.no-display {
+  display: none;
+}
+
+.no-visible {
+  visibility: hidden;
+}
+
+.no-ca {
+  text-transform: none !important;
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+    // font-size:10px;
+  }
+
+  * {
+    background-image: none !important;
+    background-color: transparent !important;
+    overflow: visible !important;
+  }
+
+  table,
+  img,
+  svg {
+    page-break-inside: avoid;
+  }
+
+  canvas {
+    page-break-inside: initial;
+  }
+
+  .c-cav-grid__btn {
+    display: none;
+  }
+
+  h3 {
+    min-height: auto !important;
+  }
+
+}
+
+.coder-out {
+  margin: 0 auto;
+  max-width: 870px;
+  overflow: scroll;
+}
+
+abbr[title], acronym[title] {
+  border-bottom: none;
+  text-decoration: none;
+}

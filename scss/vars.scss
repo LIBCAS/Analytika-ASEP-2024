@@ -1,0 +1,87 @@
+// colors
+$color-body: white;
+$background-body: white;
+
+// header
+$header-background: #003a60;
+$color-home-headline: #222;
+
+// menu
+$color-menu-item: white;
+$back-menu: rgba(39, 40, 47, 1);
+$back-menu-item: rgba(34, 40, 47, 0.4);
+$back-menu-item-active: rgba(39, 40, 47, 0.9);
+$border-menu-mobile: #b7b9ca;
+$back-menu-mobile: #3273B7;
+$back-menu-mobile-item: #003a60;
+$color-submenu-item: #003a60; //#x1c4278;
+$back-menu-left: #003a60; //#x393bx8;
+$border-menu-left-highlight: #003a60; //#x393bx8;
+
+$color-nadpis: #111;
+$color-odkaz: #003a60; //#x1c4278;
+
+$color-border-submenu: #ECECEC;
+
+// buttons color
+$color-buttons-back: #0053ba;
+$color-buttons-back-hover: #0043ba;
+
+// background color find input
+$back-color-header-find: white;
+$back-color-header-find-mobile: white;
+
+// header
+$color-input-text: #003a60;
+$color-input-text: #003a60;
+
+// helper
+$back-help: #003a60;
+
+// formular
+$color-form-select-text: #222; // #222; //#x393b78
+$color-form-select-border: #003a60; //#222; //#393b78
+$color-form-radio: #003a60; //#222; //#x393b78
+$color-form-in-text: #003a60; //#222; //#x393b78
+$color-form-checkbox: #003a60; //#222; //#x393b78
+$color-form-drupdown: #003a60; //#222; //#x393b78
+$color-form-disabled: #777; //#222; //#x393b78
+$back-form-disabled: #eee; //#222; //#x393b78
+$back-form-button: #003a60; //#222; //#x393b78
+
+// site
+$color-siter: #003a60; //#222; //#x393b78
+$back-siter-background: #003a60; //#222; //#x393b78
+
+// tabulator
+$tabulator-color-arrow: #0C1C2B;
+$tabulator-back-color-odd: white;
+$tabulator-back-color-even: #f8f8f8;
+$tabulator-color-title: #222;
+$tabulator-back-color-columns: white;
+$tabulator-back-color-arrow: #a7a7a7;
+$tabulator-back-color-arrow-active: #585858;
+$tabulator-back-color-empty: white;
+$tabulator-back-color-hover: #e5e5e5;
+
+
+// sizes
+$main-max-width: 1478px;
+$main-max-width-1700: 1678px;
+$main-max-width-1900: 1920px;
+$main-max-width-full: 1920px;
+$mobile-width: 768px;
+$mobile-width-480: 480px;
+$mobile-width-mini: 317px;
+$desk1-width: 1024px;
+$desk2-width: 1080px;
+$desk3-width: 1580px;
+$desk-width-content: 1270px;
+$mobile-width-menu: 1079px;
+$dekt-width-menu-2-colums: 1480px;
+
+
+// radius input form default
+$radius-inputy: 0.2rem;
+
+$l-head-menu-vyska: 2.8rem;

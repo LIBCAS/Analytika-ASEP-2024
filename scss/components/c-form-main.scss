@@ -1,0 +1,16 @@
+@use '../vars.scss' as *;
+@use "./forms/c-form-select-1.scss";
+@use "./forms/c-form-checkbox-1.scss";
+@use "./forms/c-form-button-1.scss";
+@use "./forms/c-form-text-1.scss";
+@use "./forms/c-form-vybrano-1.scss";
+@use "./forms/c-form-nadpis.scss";
+@use "./forms/c-form-dropdown-1.scss";
+@use "./forms/c-form-radio-1.scss";
+
+// hidden form - reset padding
+.lsc-form-hidden .lsc-form-buttom {
+  padding-bottom: 0rem;
+}
+
+

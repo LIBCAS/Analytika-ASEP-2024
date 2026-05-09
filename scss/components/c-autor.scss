@@ -1,0 +1,18 @@
+@use '../vars.scss' as *;
+.c-autor-list, .c-author-list, .c-author-detail-ida {
+     display: flex;
+     gap: 0.3rem;
+     flex-wrap: wrap;
+     img {
+          width:20px;
+          height:auto;
+     }
+}
+
+.c-author-detail-ida {
+     margin-top:0.3rem;
+}
+
+c-autor-ida__item--rivid {
+     margin-left:0.3rem;
+}

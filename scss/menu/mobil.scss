@@ -1,0 +1,234 @@
+@use '../vars.scss' as *;
+
+@media screen and (max-width: ($mobile-width-menu)) {
+  .l-head-menu {
+    width: 100%;
+  }
+
+  .l-head-menu-burger-input {
+    display: block;
+    width: 80px;
+    height: 87px;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0;
+    /*hide this*/
+    z-index: 20;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+    border: 10px solid green;
+  }
+
+
+  .l-head-menu-burger-img {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 0px;
+    width: 58px;
+    margin-right: 1rem;
+
+    @media screen and (max-width: ($mobile-width-480)) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .l-head-menu-burger-close {
+    display: block;
+    position: absolute;
+    width: 58px;
+    top: 0.5rem;
+    right: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-right: 0rem;
+
+    @media screen and (max-width: ($mobile-width-480)) {
+      // margin-right: 0rem;
+    }
+
+  }
+
+
+  .l-head-menu-burger-input:checked ~ .l-head-menu-burger-close {
+    // display:block;
+    z-index: 19;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .l-head-menu-burger-input:checked ~ .l-head-menu-list {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+
+
+  .l-head-menu-list {
+    background-color: $back-menu-mobile; //$color-body
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+
+    position: absolute;
+    top: 0px;
+    right: 0rem;
+    width: calc(100% + 1rem);
+
+    @media screen and (min-width: ($mobile-width-480 + 1)) {
+      right: 0rem;
+      width: calc(100% + 2rem);
+      background-size: 15% auto;
+    }
+
+    max-width: 1087px;
+    padding: 98px 17px 20px 0px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    color: white;
+
+    //background: $back-menu-mobile;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+    margin: 0 0%;
+    // border: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: 17;
+
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+
+      a,
+      label {
+        // color: $color-menu;
+        color: white;
+        padding: 0.7rem 0 0.7rem 0;
+        text-decoration: none;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+
+        // border-bottom: 4px solid transparent;
+        border-bottom: 2px solid $border-menu-mobile;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+        white-space: nowrap;
+        text-align: center;
+        padding-right: 0.5rem;
+        user-select: none;
+
+        @media (max-width: 480px) {
+          font-size: 1.4rem;
+          line-height: 1.78rem;
+          margin-left: 0rem;
+        }
+      }
+
+      label {
+        padding-right: 1rem;
+        background-image: url("../images/svg/menu-troj-white.svg");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: 0.5rem auto;
+        background-position: 100% 50%;
+      }
+    }
+
+    li:last-of-type a {
+      // border-bottom: 1px solid transparent;
+    }
+
+    li.active label,
+    li label:hover,
+    li.active a,
+    li a:hover,
+    li.active:last-of-type a {
+      border-bottom: 2px solid white;
+      //font-weight: bolder;
+    }
+
+    li.l-head-menu-list__submenu-out a {
+      // background-image: url("../images/svg/menu-troj-out.svg");
+      padding-right: 1rem;
+      background-image: url("../images/svg/menu-troj-out-white.svg");
+      background-repeat: no-repeat;
+      background-attachment: initial;
+      background-size: 0.5rem auto;
+      background-position: 100% 50%;
+    }
+  }
+
+  .l-head-menu-list__form {
+    padding-top: 1rem !important;
+    padding-bottom: 1.8rem !important;
+    text-align: center;
+
+    .s-in-text {
+      max-width: 387px;
+      width: 100%;
+      margin: 0 auto;
+
+      input {
+        appearance: none;
+        background-color: $back-color-header-find-mobile;
+        border: 2px solid #393b78;
+        border-radius: .25rem;
+        color: #393b78;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 400;
+        outline: 0;
+        padding: .7rem .5rem .7rem .4rem;
+        text-decoration: none;
+        width: calc(100% - 2.5rem);
+        text-align: center;
+      }
+
+      input::placeholder {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .skip-link {
+    overflow: hidden;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+
+    &:focus {
+      background-color: $background-body;
+      border-radius: 2px;
+      clip: auto !important;
+      color: white;
+      text-transform: uppercase;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      height: auto;
+      line-height: normal;
+      padding: 15px 23px 14px;
+      left: 0px;
+      top: 50px;
+      text-decoration: none;
+      width: auto;
+      border: 1px dotted white;
+      z-index: 100000;
+    }
+  }
+
+  .l-head-container-1__login {
+    padding-bottom: 2rem;
+  }
+}
+
+

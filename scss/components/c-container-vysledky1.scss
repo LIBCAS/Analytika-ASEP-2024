@@ -1,0 +1,21 @@
+@use '../vars.scss' as *;
+@use "./c-container-vysledky1/c-vysledky1-trideni.scss";
+@use "./c-container-vysledky1/c-vysledky1-trideni__select.scss";
+
+.c-container-vysledky1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+    padding-top: 1rem;
+    gap:2rem;
+    @media screen and (max-width: ($desk1-width+-1)) {
+        display: block;
+    }
+    @media print {
+        display: none;
+    }
+}
+.c-vysledky1-nalezeno {
+    white-space: nowrap;
+}

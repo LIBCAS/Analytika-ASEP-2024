@@ -1,0 +1,61 @@
+@use '../vars.scss' as *;
+
+.c-cav-export--toolt01 li {
+    position:relative;
+
+
+    &:hover {
+        .bem-tool {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+
+    .bem-tool {
+        visibility: hidden;
+        width: 115px;
+        /*
+        background-color: #e3e3e3;
+        color: #fff;
+        */
+        text-align: center;
+        border-radius: 4px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -58px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        background-color: #f5f5f5;
+        border: 1px solid #e3e3e3;
+        color: #222;
+    }
+
+    .bem-tool::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #e3e3e3 transparent transparent transparent;
+    }
+
+    .bem-tool2 {
+        left: -50%;
+    }
+    .bem-tool2::after {
+        left: 78%;
+    }
+
+    .bem-tool3 {
+        left: -78%;
+    }
+    .bem-tool3::after {
+        left: 85%;
+    }
+}

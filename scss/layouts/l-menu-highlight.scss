@@ -1,0 +1,22 @@
+@use '../vars.scss' as *;
+
+.l-menu-highlight {
+    border: 2px solid $border-menu-left-highlight;
+
+    h3 {
+        padding: 0.2rem 0.5rem !important;
+    }
+
+    ul li {
+        border-left: none !important;
+        border-right: none !important;
+        border-top:1px solid #aabeca;
+        &:first-of-type { 
+            border-top:0px solid #eee;
+            margin-top: 0.2rem;
+        }
+        &:last-of-type { 
+            border-bottom:none;
+        }
+    }
+}

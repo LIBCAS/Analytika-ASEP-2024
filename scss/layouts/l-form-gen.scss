@@ -1,0 +1,33 @@
+@use '../vars.scss' as *;
+
+.l-form-gen {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (max-width: ($mobile-width + 1)) {
+    display: block;
+  }
+}
+
+
+.l-form-gen-item1 {
+  margin-top: 0.4rem;
+  @media screen and (max-width: ($mobile-width + 1)) {
+    margin-top: 1rem;
+    padding: 1px;
+  }
+}
+
+.l-form-gen-item2 {
+  flex: 0 0 50%;
+}
+
+// first "div" - margin
+.l-form-gen-item1 div:first-of-type,
+.l-form-gen-item2 div:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.l-form-gen--button {
+  margin-top: 1rem;
+}
+

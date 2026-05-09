@@ -1,0 +1,7 @@
+@use '../vars.scss' as *;
+
+.lsc-form-oddeleni {
+  @media print {
+    display: none;
+  }
+}

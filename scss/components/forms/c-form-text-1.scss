@@ -1,0 +1,22 @@
+@use '../../vars.scss' as *;
+
+.lsc-form-text {
+  position: relative;
+  width: calc(100% - 0rem);
+  max-width: 487px;
+
+  input {
+    text-decoration: none;
+    appearance: none;
+    width: calc(100% - 2.5rem);
+    font-size: 0.85rem;
+    padding: .4rem 0.2rem .4rem .4rem;
+    outline: 0;
+    font-weight: normal;
+    background-color: #fff;
+    border: 2px solid $color-form-in-text; //#x393b78;
+    border-radius: 0.25rem;
+    color: $color-form-in-text; //#x393b78;
+    cursor: pointer;
+  }
+}

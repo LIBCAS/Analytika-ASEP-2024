@@ -1,0 +1,77 @@
+@use '../../vars.scss' as *;
+
+.lsc-dropdown-content {
+  border: 1px solid #ddd;
+  padding: 2rem 1rem;
+  max-width: 407px;
+  border-radius: 0.2rem;
+
+  div:first-of-type {
+    margin-bottom: 0 !important;
+  }
+
+  input {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid $color-form-drupdown; //#x393b78;
+    border-radius: .25rem;
+    color: $color-form-drupdown; // #x393b78;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: 0;
+    padding: .7rem .4rem .7rem .4rem;
+    text-decoration: none;
+    width: calc(100% - 0.8rem);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+
+    li {
+      background: none;
+      border-top: 1px solid #ddd;
+      list-style-type: none;
+      padding: 0;
+
+      a {
+        color: #003a60;
+        display: block;
+        line-height: 2rem;
+        padding: .14rem .3rem;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    li.active-dropdown {
+      background: #393b68;
+
+      a {
+        color: white;
+      }
+    }
+
+    li:first-of-type {
+      border-width: 0px;
+    }
+  }
+}
+
+.lsc-dropdown-content__seznam {
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 1rem;
+}
+
+
+
+
+
+

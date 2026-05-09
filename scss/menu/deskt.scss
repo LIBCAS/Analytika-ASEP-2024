@@ -1,0 +1,151 @@
+@use '../vars.scss' as *;
+
+@media screen and (min-width: $desk2-width) {
+  .l-head-menu-burger-input,
+  .l-head-menu-burger-img,
+  .l-head-menu-burger-close {
+    display: none;
+  }
+  .l-head-menu-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 95%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  .l-head-menu-list--slim {
+    width: 80%;
+  }
+  .l-head-menu-list__left {
+    grid-area: menu-list-left;
+  }
+
+  .l-head-menu-list__form {
+    grid-area: menu-list-form;
+    padding-bottom: 1.5rem;
+    text-align: center;
+
+    .s-in-text {
+      position: relative;
+      width: 100%;
+
+      input {
+        appearance: none;
+        border-radius: .58rem;
+        color: $color-input-text;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        outline: 0;
+        padding: .57rem .5rem .58rem 2.5rem;
+        text-decoration: none;
+        width: calc(100% - 5.5rem);
+        background-image: url("../images/svg/menu-in.svg");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: 2.2rem auto;
+        background-position: 7px 0%;
+        background-color: $back-color-header-find;
+        border: 1px solid #B3BCC2;
+
+        @media screen and (max-width: 1740px) {
+          width: calc(100% - 5.5rem);
+        }
+      }
+    }
+  }
+
+  .l-head-menu-list__right {
+    grid-area: menu-list-right;
+  }
+
+  .l-head-menu-list__left {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 1.15rem 0rem 1.15rem 0rem;
+    gap: 0.5rem;
+    width: calc(100% - 0rem);
+    align-items: center;
+    @media screen and (max-width: ($dekt-width-menu-2-colums)) {
+      flex-wrap: wrap;
+    }
+
+    > li {
+      @media screen and (max-width: ($dekt-width-menu-2-colums)) {
+        width: 31%;
+      }
+    }
+
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      a,
+      label {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        display: block;
+        font-size: 0.91rem;
+        font-weight: normal;
+        line-height: 1.4rem;
+        text-decoration: none;
+        color: $color-menu-item;
+        padding: 0rem 1rem;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        @media (max-width: $desk3-width) {
+          padding: 0rem 1rem;
+          font-size: 0.83rem;
+        }
+        @media (max-width: $desk2-width) {
+          padding: 0rem 1rem;
+          font-size: 0.7rem;
+        }
+      }
+
+      label {
+        padding-right: 1rem;
+        background-image: url("../images/svg/menu-down.svg");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: 0.8rem auto;
+        background-position: 100% 71%;
+      }
+    }
+
+    li.active a,
+    li > a:hover,
+    li.active-label label,
+    li > label:hover //li a:focus
+    {
+      text-decoration: underline;
+    }
+
+    li.l-head-menu-list__submenu-out a {
+      padding-right: 1rem;
+      background-image: url("../images/svg/externi.svg");
+      background-repeat: no-repeat;
+      background-attachment: initial;
+      background-size: 0.8rem auto;
+      background-position: 100% 71%;
+      margin-right: 0.85rem
+    }
+
+    .l-head-menu-list-mega_box li a,
+    .l-head-menu-list-mega_box3 li a {
+      text-transform: none;
+    }
+  }
+}
+
+

@@ -1,0 +1,58 @@
+@use '../../vars.scss' as *;
+
+.l-site-dva-bloky {
+  width: calc(100% - 0rem);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0rem 4rem;
+  overflow: hidden;
+
+  @media screen and (max-width: ($desk1-width - 1)) {
+    flex-wrap: wrap;
+    gap: 0rem 0rem;
+  }
+
+  @media print {
+    display: block;
+  }
+}
+
+.l-site-dva-bloky__left {
+  flex: 0 0 auto;
+  width: calc(20% - 4rem);
+  text-align: left;
+
+  h3:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  h3 {
+    transform: none;
+    font-size: 0.98rem;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: ($desk1-width - 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+  }
+
+  @media screen and (max-width: ($mobile-width + 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+  }
+}
+
+.l-site-dva-bloky__item {
+  flex: 1 1 auto;
+  @media screen and (max-width: ($desk1-width - 1)) {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    margin: 0 auto 4rem auto;
+    order: -1;
+  }
+}

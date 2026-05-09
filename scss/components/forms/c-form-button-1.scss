@@ -1,0 +1,139 @@
+@use '../../vars.scss' as *;
+
+$lscFormButtonDrtSize: 0.3rem;
+
+.lsc-form-buttom {
+  padding-bottom: 0rem;
+}
+
+.lsc-form-buttom button {
+  appearance: none;
+  display: inline-block;
+  border: none;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+  text-decoration: none;
+  background: $back-form-button; //#x393b78;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0.2em;
+  transition: background 250ms ease-in-out,
+  transform 150ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: #0053ba;
+  }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+
+.lsc-form-buttom--small {
+  margin-top: 0.4rem;
+
+  button {
+    padding: 0.48rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+.lsc-form-buttom--delete {
+  margin: 0;
+
+  button {
+    padding: 0.2rem 0.2rem;
+    font-size: 0.75rem;
+    margin: 0;
+    background: url('../images/svg/cross.svg') white no-repeat 4px center;
+    background-size: 15px;
+    padding-left: 24px;
+    color: #222;
+    font-family: sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #444 !important;
+    border-radius: 0.2em;
+    transition: transform 150ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+    }
+
+    &:focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+
+
+.lsc-form-buttom--dropdown {
+  padding-right: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0rem !important;
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.lsc-form-buttom--dropdown button {
+  padding-right: 2rem;
+  position: relative;
+}
+
+// arrow - up, down
+.lsc-form-buttom--dropdown button::before,
+.lsc-form-buttom--dropdown button::after {
+  content: ' ';
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+// arrow - up
+.lsc-form-buttom--dropdown button::before {
+  border-left: $lscFormButtonDrtSize solid transparent;
+  border-right: $lscFormButtonDrtSize solid transparent;
+  border-bottom: $lscFormButtonDrtSize solid white;
+  top: 30%;
+}
+
+// arrow - down
+.lsc-form-buttom--dropdown button::after {
+  border-left: $lscFormButtonDrtSize solid transparent;
+  border-right: $lscFormButtonDrtSize solid transparent;
+  border-top: $lscFormButtonDrtSize solid white;
+  top: 55%;
+}
+
+.lsc-form__item--send {
+  text-align: right;
+  margin-right: 1.4rem;
+}
+
+.lsc-form__item--send button:disabled {
+  color: #fff;
+  background: #777;
+  outline: 1px solid #fff;
+}
+

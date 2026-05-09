@@ -1,0 +1,142 @@
+@use '../vars.scss' as *;
+
+h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-family: "Atyp Text", sans-serif;
+}
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h2 a,
+h3 a,
+h4 a, .h4 a {
+  color: $color-nadpis;
+  transform: scale(.9, 1);
+  transform-origin: left;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  font-weight: 250;
+  margin-bottom: 0.5rem;
+  transform: scale(.9, 1);
+}
+
+h1.h1-site {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  transform-origin: left;
+}
+
+h2, .h2 {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  font-weight: 250;
+  margin-bottom: 0.2rem;
+  margin-top: 1rem;
+  transform: scale(.9, 1);
+}
+
+h3, .h3 {
+  line-height: 2rem;
+  margin-bottom: 0.1rem;
+  margin-top: 0.7rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  margin-bottom: 0.1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+// paragraphs
+p {
+  margin: 0.5rem 0 0.2rem 0;
+  padding: 0;
+}
+
+// links
+a {
+  color: $color-odkaz;
+  text-decoration: underline;
+}
+
+a.ls-odkaz-white,
+.ls-odkaz-white {
+  color: white;
+  text-decoration: underline;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.4rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.4rem;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+ol {
+  padding-left: 0rem;
+  margin: 0;
+  list-style-position: inside;
+}
+
+ol li {
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+
+.tabulator {
+  font-size: 12px !important;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  height: auto !important;
+}
+
+
+@media print {
+  .no-print {
+    display: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
+

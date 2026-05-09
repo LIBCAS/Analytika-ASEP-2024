@@ -1,0 +1,86 @@
+@use '../vars.scss' as *;
+
+.c-tri-bloky-text-1 {
+    margin: 0 auto;
+    width: calc(100% - 0rem);
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem 1rem;
+
+    @media screen and (max-width: ($desk1-width + 1)) {
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: ($mobile-width + 1)) {
+        display: block;
+        padding-top: 0;
+    }
+    @media print {
+        flex-wrap: wrap;
+        display: block;
+    }
+}
+
+.c-tri-bloky-text-1__item {
+    flex: 0 0 auto;
+    width: calc(33% - 1rem);
+    text-align: left;
+
+    @media screen and (max-width: ($desk1-width + 1)) {
+        margin: 0 auto;
+        width: calc(100% - 0rem);
+        margin: 0 auto 4rem auto;
+    }
+
+    @media screen and (max-width: ($mobile-width + 1)) {
+        margin: 0 auto;
+        width: calc(100% - 0rem);
+        margin: 0 auto 4rem auto;
+    }
+
+    @media print {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: calc(100% - 1rem) !important;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        @media print {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.c-tri-bloky-text-1__item, .c-tri-bloky-text-1__jeden {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li {
+        list-style-type: none;
+        background: none;
+        padding: 0rem;
+        border-top:1px solid #ddd;
+    }
+    
+    ul li:nth-child(odd) {
+        background-color: #f8f8f8;
+    }
+    ul li:nth-child(even) {
+        background-color: white;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        display: inline-block;
+        padding:0.4rem 1rem;
+        color:$color-odkaz;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
